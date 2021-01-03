@@ -6,6 +6,9 @@ Helpers copied from https://github.com/tiancaiamao/yscheme
 
 To use this framework.under every a{i} folder,implement a{i}.ss containing all the functions needed by compiler_passes{i}.ss.Then load the a{i}_main.ss and (test-all) or (test-all-invalid).
 More useful functions and documentation can be found in driver.ss
+
+I only partially tested this framework I collected under ChezScheme 9.5
+
 For every assignment done.You will get a working little scheme compiler that compiler a tiny language to assembly code.
 Finally,the tiny language will be a subset of scheme in assignment 15.
 
