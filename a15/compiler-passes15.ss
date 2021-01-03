@@ -1,0 +1,48 @@
+(compiler-passes '(
+  parse-scheme
+  convert-complex-datum
+  uncover-assigned
+  purify-letrec
+  convert-assignments
+optimize-direct-call
+  remove-anonymous-lambda
+  sanitize-binding-forms
+  uncover-free
+  convert-closures
+  analyze-closure-size
+optimize-known-call
+uncover-well-known
+optimize-free
+optimize-self-reference
+  analyze-closure-size
+  introduce-procedure-primitives
+optimize-source
+  lift-letrec
+  normalize-context
+  specify-representation
+  uncover-locals
+  remove-let
+  verify-uil
+  remove-complex-opera*
+  flatten-set!
+  impose-calling-conventions
+  expose-allocation-pointer
+  uncover-frame-conflict
+  pre-assign-frame
+  assign-new-frame
+  (iterate
+    finalize-frame-locations
+    select-instructions
+    uncover-register-conflict
+    assign-registers
+    (break when everybody-home?)
+    assign-frame)
+  discard-call-live
+  finalize-locations
+  expose-frame-var
+  expose-memory-operands
+  expose-basic-blocks
+optimize-jumps
+  flatten-program
+  generate-x86-64
+))
