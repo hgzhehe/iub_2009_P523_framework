@@ -5,6 +5,7 @@ Compiler passes and wrappers copied from https://github.com/esaliya/SchemeStack
 Helpers copied from https://github.com/tiancaiamao/yscheme
 
 To use this framework.under every a{i} folder,implement a{i}.ss containing all the functions needed by compiler_passes{i}.ss.Then load the a{i}_main.ss and (test-all) or (test-all-invalid).
+Feel free to modify compiler-passes.It's just a helper anyway.
 More useful functions and documentation can be found in driver.ss
 
 I only partially tested this framework I collected under ChezScheme 9.5
