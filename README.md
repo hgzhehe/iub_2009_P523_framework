@@ -10,7 +10,7 @@ More useful functions and documentation can be found in driver.ss
 
 I only partially tested this framework I collected under ChezScheme 9.5
 
-For every assignment done.You will get a working little scheme compiler that compiler a tiny language to assembly code.
+For every assignment done.You will get a working little scheme compiler that compiles a tiny language to assembly code.
 Finally,the tiny language will be a subset of scheme in assignment 15.
 
 
